@@ -3,7 +3,7 @@ body {
   font-size: 16px;
   line-height: 1;
 }
-
+/* // text area within the time-block class */
 textarea{
   background: transparent;
   border: none;
@@ -24,7 +24,7 @@ textarea{
 .description{
   white-space: pre-wrap;
 }
-
+/* style for time block */
 .time-block{
   text-align: center;
   border-radius: 15px;
@@ -41,22 +41,22 @@ textarea{
   color: #000000;
   border-top: 1px dashed #000000;
 }
-
+/* color for past events on the calendar */
 .past {
   background-color: #d3d3d3;
   color: white;
 }
-
+/* color for present events on the calendar */
 .present {
   background-color: #ff6961;
   color: white;
 }
-
+/* color for future events on the calendar */
 .future {
   background-color: #77dd77;
   color: white;
 }
-
+/* pre set colors for save button */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;

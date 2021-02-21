@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- linked bootstrap files -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -31,11 +32,87 @@
       <p id="currentDay" class="lead"></p>
     </header>
 
+      <!-- // containers are requiered for bootstrap grid -->
       <div class="container">
-      <!-- Timeblocks go here -->
-      </div>
+      <!-- Timeblocks go here --> 
+      <!-- id is used once for hour and class is used to style each row -->
+        <div id="9am" class="row time-block">
+          <!-- column where the hour will show -->
+          <div class="hour col-md-1">9am</div>
+          <!-- column where the user inputs text -->
+          <textarea class="col-md-10 description"></textarea>
+          <!-- button -->
+          <button class="saveBtn col-md-1">
+            <!-- icon will go here -->
+            <i class="far fa-save"></i>
+            </button>
+        </div>
+        
+        <div id="10am" class="row time-block">
+          <div class="hour col-md-1">10am</div>
+          <textarea class="col-md-10 descripton"></textarea>
+          <button class="saveBtn col-md-1">
+            <i class="far fa-save"></i>
+          </button>
+        </div>
 
-      
+        <div id="11am" class="row time-block">
+          <div class="hour col-md-1">11am</div>
+          <textarea class="col-md-10 descripton"></textarea>
+          <button class="saveBtn col-md-1">
+            <i class="far fa-save"></i>
+          </button>
+        </div>
+
+        <div id="11pm" class="row time-block">
+          <div class="hour col-md-1">11pm</div>
+          <textarea class="col-md-10 descripton"></textarea>
+          <button class="saveBtn col-md-1">
+            <i class="far fa-save"></i>
+          </button>
+        </div>
+
+        <div id="1pm" class="row time-block">
+          <div class="hour col-md-1">1pm</div>
+          <textarea class="col-md-10 descripton"></textarea>
+          <button class="saveBtn col-md-1">
+            <i class="far fa-save"></i>
+          </button>
+        </div>
+
+        <div id="1pm" class="row time-block">
+          <div class="hour col-md-1">1pm</div>
+          <textarea class="col-md-10 descripton"></textarea>
+          <button class="saveBtn col-md-1">
+            <i class="far fa-save"></i>
+          </button>
+        </div>
+        
+        <div id="3pm" class="row time-block">
+          <div class="hour col-md-1">3pm</div>
+          <textarea class="col-md-10 descripton"></textarea>
+          <button class="saveBtn col-md-1">
+            <i class="far fa-save"></i>
+          </button>
+        </div>
+
+        <div id="4pm" class="row time-block">
+          <div class="hour col-md-1">4pm</div>
+          <textarea class="col-md-10 descripton"></textarea>
+          <button class="saveBtn col-md-1">
+            <i class="far fa-save"></i>
+          </button>
+        </div>
+
+        <div id="5pm" class="row time-block">
+          <div class="hour col-md-1">5pm</div>
+          <textarea class="col-md-10 descripton"></textarea>
+          <button class="saveBtn col-md-1">
+            <i class="far fa-save"></i>
+          </button>
+        </div>
+
+      <!-- linked jquery and moment ja files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <!-- linked javascript file -->
