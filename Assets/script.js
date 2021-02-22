@@ -14,53 +14,47 @@ var hour17 = $('#5pm');
 //todays moment is displayed on the id tag currentDay from html and displayed on screen
 $("#currentDay").text(today.format('[Hello, today is ]dddd, MMMM Do')); 
 
+   //PSEUDOCODE FOR FIRST FUNCTION 
 
-
-// //if the curernt time matches one of the hours on the screen change color to green
   function pastPresentFuture() {
+    // set variables 
     var time = moment().format('h');
-    var hours = JSON.parse(hours)
-
-
-   if (currentHour === hours) {
+    var hour = JSON.parse(today.hours);
+    // if, current time matches the hour on site add class .present
+  if (time === hour) {
     $("textarea").addClass("present");
-  } else if (currentHour < hours) {
+    //else if, the time is less than the hour add class .past
+  } else if (time < hour) {
     $("textarea").addClass("past");
+    // else set the class to .future
   } else {
-  $("textarea").addClass("future");
+    $("textarea").addClass("future");
   }
-  }
-  pastPresentFuture();
+} // call on function when page loads
+pastPresentFuture();
  
-  // Selects the current HTML element
-  // $("button").click(function(){
-  //   $(this).hide();
-
  
-//   function pastPresentFuture() 
-// //PSEUDOCODE FOR FIRST FUNCTION 
-  //   $(this).hide();
-  //for local storage function
-  // $("button").click({
-  //   mouseenter: function(){
-  //     $(this).css("background-color", "lightgray");
-  //   },
-  //   mouseleave: function(){
-  //     $(this).css("background-color", "lightblue");
-  //   },
-  //   click: function(){
-  //     $(this).css("background-color", "yellow");
-  //   }
-  // });
+// //PSEUDOCODE FOR SECOND FUNCTION 
 
+// only when save button is clicked 
+$("button").click(function(){
+  // userInput is the text entered in textarea
+  var userInput = $("textarea").val();
+  // 
+  localStorage.setItem("textarea", userInput);
+}) 
+console.log("textarea");
 
-// $("button").click(function(){
-//   var userInput = {
-
-//   }
-// });
+// // Retrieve
+// document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+  // Use .setItem() to store object in storage
+  // JSON.stringify to convert it as a string
 // localStorage.setItem("userInput", JSON.stringify(userInput));
 
-
+// //PSEUDOCODE FOR THIRDFUNCTION 
+renderPlanner();
+function renderPlanner() {
+  var userInput = localStorage.getItem("textarea");
+}
 
   
