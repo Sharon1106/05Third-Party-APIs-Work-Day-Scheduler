@@ -12,11 +12,11 @@ var hour16 = $('#16pm');
 var hour17 = $('#17pm');
 
 // when window opens todays moment is displayed on the id tag currentDay from html and displayed on screen
-$("#currentDay").text(time.format('[Hello, today is ]dddd, MMMM Do')); 
+$("#currentDay").text(time.format('[Hello, today is ]dddd, MMMM Do'));
 
-  //  PSEUDOCODE FOR FIRST FUNCTION 
+//this function changes the colors of the time blocks depending on the hour
 function plannerColors() {
-    // set variables 
+    // set variables
     var hour = time.hours();
     // selected time block class to iterate over 
     $(".time-block").each(function() {
@@ -36,30 +36,29 @@ function plannerColors() {
 } // call on function when page loads
 plannerColors();
 
-// // //PSEUDOCODE FOR SECOND FUNCTION 
-  // When save button is clicked run this function
+
+  // When save button is clicked run this function to save input
 $(".saveBtn").on("click", function(event) {
     event.preventDefault();
-  // get userInput from this buttons siblings using id's or classes 
-  var userInput = $(this).siblings().eq(1).val();
-
-  var time = $(this).parent().attr("id");
-  // saves the value in userInput with key name time
+    // get userInput from this buttons sibling, the first in the array's value
+    var userInput = $(this).siblings().eq(1).val();
+    // our key is located within the buttons parent id
+    var time = $(this).parent().attr("id");
+    // saves the value in userInput with key name time
   localStorage.setItem(time, userInput);
 });
 
 
-// // //PSEUDOCODE FOR THIRDFUNCTION 
+// this function renders what was saved in local storage
 function renderPlanner() {
-  // grab textarea element and initiate function, and iterate for each 
+  // grab textarea element and initiate function, and iterate for each
   $(".time-block").each(function() {
     // for the plannerinput variable we're grabbing the time blocks id value
-  var plannerInput = localStorage.getItem($(this).attr("id"));
-  // if the planner input returns null/ empty do not initiate the function
-  if (plannerInput !== null){
+    var plannerInput = localStorage.getItem($(this).attr("id"));
+    // if the planner input returns null/ empty do not initiate the function
+    if (plannerInput !== null){
     $(this).children().eq(1).val(plannerInput);
   }
   })
-}
-// call on function when page loads 
+}// call on function when page loads
 renderPlanner();
