@@ -2,6 +2,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-image: url("https://www.gatehousestyle.com/wp-content/uploads/2018/04/157101-vertical-desk-wallpaper-1920x1080-mobile.jpg");
+  background-size: cover;
 }
 /* // text area within the time-block class */
 textarea{
@@ -40,7 +42,6 @@ textarea{
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
-  font-weight: bold;
   text-align: center;
   padding-top: 25px;
 }
