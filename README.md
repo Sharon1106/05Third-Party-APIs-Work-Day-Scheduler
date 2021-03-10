@@ -23,7 +23,7 @@ SO THAT I can manage my time effectively
   https://github.com/Sharon1106/05Third-Party-APIs-Work-Day-Scheduler | https://sharon1106.github.io/05Third-Party-APIs-Work-Day-Scheduler/.
   
   ## Built with
-  For this assignment I used the following API's: Bootstrap  https://getbootstrap.com/ | jQuery https://jquery.com/ | Moment.j.s https://momentjs.com/
+  For this assignment I used the following API's: [Bootstrap](https://getbootstrap.com/) | [jQuery](https://jquery.com/) | [Momentj.s](https://momentjs.com/)
 
   ## License 
   This project is licensed under: MIT | https://opensource.org/licenses/MIT
