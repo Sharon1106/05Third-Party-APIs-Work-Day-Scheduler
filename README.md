@@ -1,4 +1,4 @@
-# 05-Third-Party-APIs-Work-Day-Scheduler [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# 05-Third-Party-APIs-Work-Day-Schedule [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
 ## Description   
 A daily schedule for your average work day with color changing input areas depending on the hour. 
