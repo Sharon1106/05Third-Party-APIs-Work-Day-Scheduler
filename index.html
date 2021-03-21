@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- linked bootstrap files -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -19,12 +18,10 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <!-- linked css file -->
     <link rel="stylesheet" href="Assets/style.css"/>
     <title>Work Day Scheduler</title>
   </head>
 
-  
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
@@ -35,13 +32,10 @@
       <!-- // containers are requiered for bootstrap grid -->
       <div class="container">
 
-        <!-- Timeblocks go here --> 
-
-        <!-- id is used once for hour and class the same, to style each row -->
         <div id="9am" class="row time-block">
-          <!-- column where the hour will show -->
+       
           <div class="hour col-md-1">9:00 am</div>
-            <!-- column where the user inputs text -->
+     
           <textarea class="col-md-10 description"></textarea>
           <!-- button -->
             <button class="saveBtn col-md-1">
@@ -115,7 +109,6 @@
         </div>
 
       </div>
-      <!-- linked jquery and moment ja files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <!-- linked javascript file -->
