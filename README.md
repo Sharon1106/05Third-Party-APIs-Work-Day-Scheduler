@@ -21,7 +21,7 @@ SO THAT I can manage my time effectively
   ## Usage 
  
   ![image](https://user-images.githubusercontent.com/30086519/108946388-3294c980-7613-11eb-8a5e-32f0e24a8b85.png)
-   [code link](https://github.com/Sharon1106/05Third-Party-APIs-Work-Day-Scheduler) | [live link](https://sharon1106.github.io/05Third-Party-APIs-Work-Day-Scheduler/)
+   [code link](https://github.com/Sharon1106/05Third-Party-APIs-Work-Day-Scheduler) | [live link](https://sharon1106.github.io/Typical-Work-Day-Scheduler/)
  
   
   ## Built with
